@@ -20,7 +20,6 @@ package com.narrowtux.dropchest;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.world.ChunkUnloadEvent;
-import org.bukkit.event.world.WorldListener;
 
 public class DropChestWorldListener implements Listener {
 	public static DropChest plugin;

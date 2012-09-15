@@ -17,11 +17,16 @@
 
 package com.narrowtux.dropchest;
 
-import java.util.HashMap;
-
 import org.bukkit.Material;
+import org.bukkit.entity.HumanEntity;
+import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.ListIterator;
 
 public class DropChestInventory implements Inventory {
 
@@ -31,7 +36,47 @@ public class DropChestInventory implements Inventory {
 		this.inventories = inventories;
 	}
 
-	@Override
+    @Override
+    public int getMaxStackSize() {
+        return 0;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public void setMaxStackSize(int i) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public List<HumanEntity> getViewers() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public String getTitle() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public InventoryType getType() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public InventoryHolder getHolder() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public ListIterator<ItemStack> iterator() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public ListIterator<ItemStack> iterator(int i) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
 	public HashMap<Integer, ItemStack> addItem(ItemStack... arg0) {
 		//Confirmed to work.
 		HashMap<Integer, ItemStack> ret = new HashMap<Integer, ItemStack>();
